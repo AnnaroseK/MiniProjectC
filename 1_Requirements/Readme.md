@@ -57,4 +57,20 @@
 ## How
   With calculator, computation becomes easier and faster as compared to human computation
   
-  
+ # Detail Requirements
+ 
+ ## High Level Requirements:
+ | ID | Description | Status |
+ | ----- | ----- | ----- |
+ | HL01 | Read input from user | Future |
+ | HL02 | Perform BODMASS | Future |
+ | HL03 | Display output | Future |
+ 
+ ## Low Level Requirements:
+ | ID | Description | Status |
+ | ----- | ----- | ----- |
+ | LL01 | The input entered by user is taken as string | Future |
+ | LL02 | Find the numbers, brackets and arithmetic operations | Future |
+ | LL03 | Check for worng input values like alphabets, NULL values or too large values | Future |
+ | LL04 | Evalutae the expression using the BODMASS principle | Future |
+ | LL05 | Display SUCCESS or FAILURE | Future |
