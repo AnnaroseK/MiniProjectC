@@ -35,4 +35,5 @@
   Calculation is done as per BODMAS rule
   Output will be generated
   Testing will be done to check incorrect inputs like alphabets, large numbers or NULL values
+  ![Architecture](https://github.com/AnnaroseK/MiniProjectC/blob/main/1_Requirements/Architecture.PNG)
   
