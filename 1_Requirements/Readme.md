@@ -5,6 +5,23 @@
   
 ## Research
 ### Evolution of calculator
-      
+  In the early days, counting was done using fingers. However there is a limit when we use fingers to count. So mankind introduced the Abacus. Abacus is just the beginning of the   revolution in computation.
+  1623 : First adding machine
+  1773 : First functional calculator
+  1820 : First commercially produced mechanical calculator
+  1954 : First all-transistor calculator
+  1961 : First all electronic desktop calculator
+  1967 : First handheld calculator
+  1971 : First pocket sized calculator using LED display
+  1974 : First hand held programmable calculator
+  1985 : First graphing calculator
+  2003 : First Graphing Calculator with Touch Functionality
+  2010 : First Color Graphing Calculator
+  
 ### Benefits
+  * Faster computation
+  * Computation of extreme large data that cannot be calculated manually
+  * Faster calculation of large amounts of data
 ### Disadvantages
+  * The use of calculator has made us too dependent on them that it prevents us from using our own skills to compute
+  * We blindly believe the computed value without checking if an error is introduced
