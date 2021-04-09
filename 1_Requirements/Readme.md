@@ -31,4 +31,8 @@
   Quick computation of expression entered.
 
 ## Defining our System
+  Input is taken as a string expression
+  Calculation is done as per BODMAS rule
+  Output will be generated
+  Testing will be done to check incorrect inputs like alphabets, large numbers or NULL values
   
