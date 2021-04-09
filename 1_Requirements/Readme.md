@@ -40,4 +40,21 @@
 ## SWOT ANALYSIS
   ![SWOT ANALYSIS](https://github.com/AnnaroseK/MiniProjectC/blob/main/1_Requirements/SWOT%20Analysis.png)
   
+# 4W&#39;s and 1&#39;H
+
+## Who
+  For all types of people using caluclator for basic arithmetic computation
+
+## What
+  For the purpose of saving time in computing, and to make computation of large values that cannot be manually computed, easy.
+  
+## When
+  The need for faster, efficient computation for large expressions and large number of data has been prevailing since human's learned about counting. It has become a pressing     need especially today with the emergence of technology, large amount of data and emergence of data analytics
+  
+## Where
+  The need for calculator is prevelant in all parts of life, be it a student, teacher, engineer, shopkeeper and so on
+  
+## How
+  With calculator, computation becomes easier and faster as compared to human computation
+  
   
