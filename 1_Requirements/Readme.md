@@ -29,7 +29,7 @@
  
 ## Cost and Features
   Quick computation of expression entered.
-
+  
 ## Defining our System
   Input is taken as a string expression
   Calculation is done as per BODMAS rule
