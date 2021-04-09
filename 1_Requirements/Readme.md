@@ -22,6 +22,13 @@
   * Faster computation
   * Computation of extreme large data that cannot be calculated manually
   * Faster calculation of large amounts of data
+  
 ### Disadvantages
   * The use of calculator has made us too dependent on them that it prevents us from using our own skills to compute
   * We blindly believe the computed value without checking if an error is introduced
+ 
+## Cost and Features
+  Quick computation of expression entered.
+
+## Defining our System
+  
