@@ -37,3 +37,7 @@
   Testing will be done to check incorrect inputs like alphabets, large numbers or NULL values
   ![Architecture](https://github.com/AnnaroseK/MiniProjectC/blob/main/1_Requirements/Architecture.PNG)
   
+## SWOT ANALYSIS
+  ![SWOT ANALYSIS](https://github.com/AnnaroseK/MiniProjectC/blob/main/1_Requirements/SWOT%20Analysis.png)
+  
+  
