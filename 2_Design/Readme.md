@@ -11,6 +11,9 @@ Component Diagram
 
 Use case
   ![Calculator Use Case Diagram](https://github.com/AnnaroseK/MiniProjectC/blob/main/2_Design/Calculator%20Use%20case%20HLD.PNG)
+  
+ Sequence diagram
+  ![Calculator Sequence diagram](https://github.com/AnnaroseK/MiniProjectC/blob/main/2_Design/Calculator%20Sequence%20diagram%20HLD.PNG)
 
 
 ## Low Level Design
