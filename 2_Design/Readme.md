@@ -10,6 +10,8 @@ Component Diagram
 ### Behavioural Diagram
 
 Use case
+![Calculator Use Case Diagram](https://github.com/AnnaroseK/MiniProjectC/blob/main/2_Design/Calculator%20Use%20case%20HLD.PNG)
+
 
 ## Low Level Design
 
