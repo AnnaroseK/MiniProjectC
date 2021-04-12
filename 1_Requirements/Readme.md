@@ -28,7 +28,9 @@
   * We blindly believe the computed value without checking if an error is introduced
  
 ## Cost and Features
-  Quick computation of expression entered.
+  Entering any arithmetic expression
+  Generate output in minimum time
+  Check for irregular inputs
   
 ## Defining our System
   Input is taken as a string expression
@@ -46,13 +48,13 @@
   For all types of people using caluclator for basic arithmetic computation
 
 ## What
-  For the purpose of saving time in computing, and to make computation of large values that cannot be manually computed, easy.
+  For the purpose of saving time in computing by generating faster results of computation
   
 ## When
   The need for faster, efficient computation for large expressions and large number of data has been prevailing since human's learned about counting. It has become a pressing     need especially today with the emergence of technology, large amount of data and emergence of data analytics
   
 ## Where
-  The need for calculator is prevelant in all parts of life, be it a student, teacher, engineer, shopkeeper and so on
+  The need for calculator is prevelant in all parts of life, be it a student, teacher, engineer, shopkeeper or in data science
   
 ## How
   With calculator, computation becomes easier and faster as compared to human computation
@@ -60,17 +62,17 @@
  # Detail Requirements
  
  ## High Level Requirements:
- | ID | Description | Status |
- | ----- | ----- | ----- |
- | HL01 | Read input from user | Future |
- | HL02 | Perform BODMASS | Future |
- | HL03 | Display output | Future |
+ | ID | Description | Notes | Status |
+ | ----- | ----- | ----- | ----- |
+ | HL01 | Read input from user | N/A | Future |
+ | HL02 | Perform BODMASS | N/A |Future |
+ | HL03 | Display output | N/A |Future |
  
  ## Low Level Requirements:
- | ID | Description | Status |
- | ----- | ----- | ----- |
- | LL01 | The input entered by user is taken as string | Future |
- | LL02 | Find the numbers, brackets and arithmetic operations | Future |
- | LL03 | Check for worng input values like alphabets, NULL values or too large values | Future |
- | LL04 | Evalutae the expression using the BODMASS principle | Future |
- | LL05 | Display SUCCESS or FAILURE | Future |
+ | ID | Description | Notes |Status |
+ | ----- | ----- | ----- | ----- |
+ | LL01 | The input entered by user is taken as string | N/A | Future |
+ | LL02 | Find the numbers, brackets and arithmetic operations | N/A |Future |
+ | LL03 | Check for worng input values like alphabets, NULL values or too large values | N/A | Future |
+ | LL04 | Evalutae the expression using the BODMASS principle | N/A | Future |
+ | LL05 | Display SUCCESS or FAILURE | N/A | Future |
