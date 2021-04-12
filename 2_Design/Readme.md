@@ -24,3 +24,6 @@ Component Diagram
 
 Use case
  ![Calculator Use case diagram](https://github.com/AnnaroseK/MiniProjectC/blob/main/2_Design/Calculator%20Use%20case%20LLD.PNG)
+ 
+ Sequence diagram
+  ![Calculator Sequence Diagram] (
