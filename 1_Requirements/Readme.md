@@ -65,14 +65,14 @@
  | ID | Description | Notes | Status |
  | ----- | ----- | ----- | ----- |
  | HL01 | Read input from user | N/A | Future |
- | HL02 | Perform BODMASS | N/A |Future |
+ | HL02 | Compute expression | N/A |Future |
  | HL03 | Display output | N/A |Future |
  
  ## Low Level Requirements:
  | ID | Description | Notes |Status |
  | ----- | ----- | ----- | ----- |
- | LL01 | The input entered by user is taken as string | N/A | Future |
- | LL02 | Find the numbers, brackets and arithmetic operations | N/A |Future |
- | LL03 | Check for worng input values like alphabets, NULL values or too large values | N/A | Future |
- | LL04 | Evalutae the expression using the BODMASS principle | N/A | Future |
- | LL05 | Display SUCCESS or FAILURE | N/A | Future |
+ | LL01 | Read any expression from user | N/A | Future |
+ | LL02 | Check for wrong input values like alphabets, NULL values or too large values | N/A | Future |
+ | LL03 | Evaluate the expression | N/A | Future |
+ | LL04 | Display SUCCESS or FAILURE | N/A | Future |
+ | LL05 |If SUCCESS, display output | N/A | Future |
