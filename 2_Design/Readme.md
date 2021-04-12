@@ -5,4 +5,4 @@
 ### Structural Diagram
 
 Component Diagram
- ![Calculator component diagram](
+ ![Calculator_component_diagram](
