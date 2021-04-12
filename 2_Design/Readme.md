@@ -5,4 +5,5 @@
 ### Structural Diagram
 
 Component Diagram
- ![Calculator_component_diagram](
+ ![Calculator_component_diagram](https://github.com/AnnaroseK/MiniProjectC/blob/main/2_Design/Calculator%20component.PNG)
+ 
