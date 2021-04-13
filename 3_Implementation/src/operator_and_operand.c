@@ -2,7 +2,7 @@
 #include<string.h>
 #include "calculator_header.h"
 
-int separate_operator_operand(exp *e){
+int separate_operator_operand(expression *e){
     char temp[200];
     strcpy(temp,e->value);
     int len=strlen(temp);
