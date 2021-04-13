@@ -4,7 +4,7 @@
 
 long long int result=0;
 
-void shift(int *operator,int *operand,int *length,int i){
+void shift(int *length,int i){
     for(int rep=i+1;rep<length-1;rep++){
             operand[rep]=operand[rep+1];
         }
@@ -14,41 +14,63 @@ void shift(int *operator,int *operand,int *length,int i){
         length--;
 }
 
-void mul_and_div(int *operator,int *operand,int length,int *result){
+void mul_and_div(int length,long long int *result){
     for(int i=0;i<length;i++){
         if(operator[i]=='/'){
             result=operand[i]/operand[i+1];
             operand[i]=result;
-            shift(operator,operand,&length,i);
+            shift(&length,i);
         }
         else if(operator[i]=='*'){
             result=operand[i]*operand[i+1];
             operand[i]=result;
-            shift(operator,operand,&length,i);
+            shift(&length,i);
         }
     }
 }
 
-void sum_and_minus(int *operator,int *operand,int length,int *result){
+void sum_and_minus(int length,long long int *result){
     for(int i=0;i<length;i++){
         if(operator[i]=='+'){
             result=operand[i]+operand[i+1];
             operand[i]=result;
-            shift(operator,operand,&length,i);
+            shift(&length,i);
         }
         else if(operator[i]=='-'){
             result=operand[i]-operand[i+1];
             operand[i]=result;
-            shift(operator,operand,&length,i);
+            shift(&length,i);
         }
     }
 }
 
-long long int compute(exp *e,int *operator,int *operand,int *result){
+void compute(expression *e,long long int *result){
     int length=separate_operator_operand(e);
     if(SUCCESS==check_input(e)){
-        mult_and_div(operator,operand,length,&result);
-        sum_and_minus(operator,operand,length,&result);
+        mult_and_div(length,&result);
+        sum_and_minus(length,&result);
     }
-    return result;
+}
+
+error check_input(expression *e1){
+    if(NULL==e1){
+        return ERROR_NULL;
+    }
+    char temp[200];
+    strcpy(temp,e1->value);
+    int len=strlen(temp);
+    if(len>30){
+        return OUT_OF_SCOPE;
+    }
+    for(int i=0;i<len;i++){
+        if((temp[i]>='a'&&temp[i]<='z')||(temp[i]>='A'&&temp[i]<='Z')){
+            return INVALID_INPUT;
+        }
+        if(!(temp[i]=='+')||(temp[i]=='-')||(temp[i]=='*')||(temp[i]=='/')){
+            return INVALID_INPUT;
+        }
+    }
+    separate_operator_operand(e1);
+    compute(e1,result);
+    return SUCCESS;
 }
