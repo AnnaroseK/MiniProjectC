@@ -34,8 +34,6 @@ typedef struct expression{
     char value[200];
 }expression;
 
-int operator[20]={0},index_operator=0,index_operand=0;
-char operand[20];
 
 /**
  * @brief To check if input is valid or not
