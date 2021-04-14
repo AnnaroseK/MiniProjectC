@@ -4,56 +4,59 @@
     #include<stdlib.h>
     #include "calculator_header.h"
 
+    void mul_and_div(int length,long long int result);
+    void sum_and_minus(int length,long long int result);
+    void (*fptr1)(int,long long int)=&mul_and_div;
+    void (*fptr2)(int,long long int)=&sum_and_minus;
     long long int result=0;
-    int operator[20]={0},index_operator=0,index_operand=0;
+    int operator[20]={0},index_operator=0,index_operand=0,length;
     char operand[20];
 
-
-    void shift(int *length,int i){
-        for(int rep=i+1;rep<*length-1;rep++){
+    void shift(int length,int i){
+        for(int rep=i+1;rep<length-1;rep++){
                 operand[rep]=operand[rep+1];
             }
-            for(int rep=i;rep<*length-1;rep++){
+            for(int rep=i;rep<length-1;rep++){
                 operator[rep]=operator[rep+1];
             }
             length--;
     }
 
-    void mul_and_div(int length,long long int *result){
+    void mul_and_div(int length,long long int result){
         for(int i=0;i<length;i++){
             if(operator[i]=='/'){
-                *result=operand[i]/operand[i+1];
-                operand[i]=*result;
-                shift(&length,i);
+                result=operand[i]/operand[i+1];
+                operand[i]=result;
+                shift(length,i);
             }
             else if(operator[i]=='*'){
-                *result=operand[i]*operand[i+1];
-                operand[i]=*result;
-                shift(&length,i);
+                result=operand[i]*operand[i+1];
+                operand[i]=result;
+                shift(length,i);
             }
         }
     }
 
-    void sum_and_minus(int length,long long int *result){
+    void sum_and_minus(int length,long long int result){
         for(int i=0;i<length;i++){
             if(operator[i]=='+'){
-                *result=operand[i]+operand[i+1];
-                operand[i]=*result;
-                shift(&length,i);
+                result=operand[i]+operand[i+1];
+                operand[i]=result;
+                shift(length,i);
             }
             else if(operator[i]=='-'){
-                *result=operand[i]-operand[i+1];
-                operand[i]=*result;
-                shift(&length,i);
+                result=operand[i]-operand[i+1];
+                operand[i]=result;
+                shift(length,i);
             }
         }
     }
 
-    void compute(expression *e,long long int *result){
+    void compute(expression *e,long long int result){
         int length=separate_operator_operand(e);
         if(SUCCESS==check_input(e)){
-            mul_and_div(length,result);
-            sum_and_minus(length,result);
+            (*fptr1)(length,result);
+            (*fptr2)(length,result);
         }
     }
 
@@ -95,6 +98,6 @@
             }
         }
         separate_operator_operand(e1);
-        compute(e1,&result);
+        compute(e1,result);
         return SUCCESS;
     }
