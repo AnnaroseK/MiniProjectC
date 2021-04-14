@@ -8,6 +8,8 @@
  * @copyright Copyright (c) 2021
  * 
  */
+#include<stdio.h>
+
 
 #ifndef __CALCULATOR_HEADER_H__
 #define __CALCULATOR_HEADER_H__
@@ -58,7 +60,7 @@ int separate_operator_operand(expression *e);
  * @param e expression entered by user
  * @param result the rult of the expression 
  */
-void compute(expression *e,long long int *result);
+void compute(expression *e,long long int result);
 
 /**
  * @brief To perform addition and subtraction
@@ -66,7 +68,7 @@ void compute(expression *e,long long int *result);
  * @param length the number of operands
  * @param result result of operation
  */
-void sum_and_minus(int length,long long int *result);
+void sum_and_minus(int length,long long int result);
 
 /**
  * @brief To perform multiplication and division
@@ -74,5 +76,5 @@ void sum_and_minus(int length,long long int *result);
  * @param length the number of operands
  * @param result result of operation
  */
-void mul_and_div(int length,long long int *result);
+void mul_and_div(int length,long long int result);
 #endif
