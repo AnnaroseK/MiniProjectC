@@ -3,9 +3,7 @@ TEST_PROJ_NAME = Test_$(PROJ_NAME)
 
 BUILD_DIR = Build
 
-SRC = src/checkinput.c\
-src/compte.c\
-src/operator_and_operand.c
+SRC = src/compute.c
 
 TEST_SRC = test/test_calculator.c\
 unity/unity.c
